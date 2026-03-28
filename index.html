@@ -3,45 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>刘泽宇 | Liu-Zeyu 的个人主页</title>
+    <title>刘泽宇 | 个人主页</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- 状态徽章 -->
     <div id="statusBadge" class="status-badge status-offline" onclick="changeStatus()">
         <span id="statusEmoji">💤</span>
         <span id="statusText">下线</span>
     </div>
     
     <div class="page-container">
-        <!-- 左侧信息栏（简化版） -->
         <aside class="info-panel">
             <div class="avatar-box">
-                <img src="images/avatar.jpg" alt="刘泽宇的头像" class="avatar">
+                <img src="images/avatar.jpg" alt="头像" class="avatar">
                 <div id="avatarStatus" class="avatar-status"></div>
             </div>
-            
             <h1 class="chinese-name">刘泽宇</h1>
             <p class="english-name">Liu-Zeyu</p>
             <p class="nickname"><i class="fas fa-paw"></i> Rattlesnake</p>
             
-            <!-- 当前状态 -->
             <div class="info-section">
                 <h3><i class="fas fa-satellite-dish"></i> 当前状态</h3>
-                <p id="statusDescription">💤 离线中，暂不接收消息</p>
+                <p id="statusDescription">💤 离线中</p>
                 <p id="statusTime">更新于：<span id="lastUpdateTime">--</span></p>
             </div>
             
-            <!-- 核心联系信息 -->
             <div class="info-section">
                 <h3><i class="fas fa-link"></i> 联系</h3>
                 <p><i class="fas fa-envelope"></i> 邮箱待更新</p>
                 <p><i class="fab fa-github"></i> GitHub待更新</p>
             </div>
             
-            <!-- 学校信息 -->
             <div class="info-section">
                 <h3><i class="fas fa-school"></i> 学校</h3>
                 <p>阜阳市实验小学北校区</p>
@@ -49,113 +43,73 @@
             </div>
         </aside>
         
-        <!-- 右侧主内容（包含迁移过来的信息） -->
         <main class="content-area">
-            <!-- 基本信息（从侧边栏移来） -->
             <section class="content-block">
                 <h2><i class="fas fa-info-circle"></i> 基本信息</h2>
                 <div class="info-grid">
-                    <div class="info-item">
-                        <strong>生日</strong>
-                        <p>2016年1月</p>
-                    </div>
-                    <div class="info-item">
-                        <strong>年级</strong>
-                        <p>小学</p>
-                    </div>
-                    <div class="info-item">
-                        <strong>坐标</strong>
-                        <p>安徽省阜阳市</p>
-                    </div>
+                    <div class="info-item"><strong>生日</strong><p>2016年1月</p></div>
+                    <div class="info-item"><strong>年级</strong><p>小学</p></div>
+                    <div class="info-item"><strong>坐标</strong><p>安徽阜阳</p></div>
                 </div>
             </section>
             
-            <!-- 技能（从侧边栏移来） -->
             <section class="content-block">
-                <h2><i class="fas fa-code"></i> 编程技能</h2>
+                <h2><i class="fas fa-code"></i> 技能</h2>
                 <div class="skill-tags">
                     <span class="skill-tag cpp">C++ (2022)</span>
                     <span class="skill-tag python">Python (2024)</span>
                     <span class="skill-tag web">网页开发</span>
-                    <span class="skill-tag algo">算法</span>
                 </div>
             </section>
             
-            <!-- 语言能力（从侧边栏移来） -->
             <section class="content-block">
-                <h2><i class="fas fa-language"></i> 语言能力</h2>
-                <div class="language-list">
-                    <p><strong>中文</strong>（母语）</p>
-                    <p><strong>英语</strong>（学习中）</p>
-                </div>
+                <h2><i class="fas fa-language"></i> 语言</h2>
+                <p><strong>中文</strong>（母语）</p>
+                <p><strong>英语</strong>（学习中）</p>
             </section>
             
-            <!-- 欢迎语 -->
             <section class="content-block">
                 <h2><i class="fas fa-hand-wave"></i> 你好！</h2>
-                <p>我是刘泽宇，一名来自安徽阜阳的小学生，对编程和计算机科学充满兴趣。2022年开始学习C++，2024年开始接触Python，目前正在学习网页开发。</p>
-                <p>我相信代码能够创造有趣的事物，享受解决问题和动手实践的乐趣。</p>
+                <p>我是刘泽宇，小学生，喜欢编程。2022年开始学C++，2024年开始学Python，目前在学网页开发。</p>
             </section>
             
-            <!-- 项目经历 -->
             <section class="content-block">
-                <h2><i class="fas fa-laptop-code"></i> 项目与经历</h2>
-                
+                <h2><i class="fas fa-laptop-code"></i> 项目</h2>
                 <div class="project-card">
-                    <div class="project-header">
-                        <h3>个人网站开发</h3>
-                        <span class="project-date">2026年3月至今</span>
-                    </div>
-                    <p class="project-role"><i class="fas fa-user-tie"></i> 所有者 & 开发者</p>
-                    <p class="project-desc">我正在创建自己的个人网站，学习HTML、CSS和JavaScript。计划在网站功能完善后，购买域名和服务器进行正式部署。</p>
-                    <div class="project-tech">
-                        <span>HTML5</span>
-                        <span>CSS3</span>
-                        <span>JavaScript</span>
-                    </div>
+                    <h3>个人网站开发</h3>
+                    <p class="project-date">2026年3月至今</p>
+                    <p>学习HTML/CSS/JavaScript，计划购买域名和服务器部署。</p>
                 </div>
-                
                 <div class="project-card">
-                    <div class="project-header">
-                        <h3>算法学习</h3>
-                        <span class="project-date">2022年至今</span>
-                    </div>
-                    <p class="project-role"><i class="fas fa-brain"></i> 学习者</p>
-                    <p class="project-desc">在洛谷等平台刷题，学习基础算法和数据结构，为未来的编程竞赛做准备。</p>
-                    <div class="project-tech">
-                        <span>C++</span>
-                        <span>算法</span>
-                        <span>数据结构</span>
-                    </div>
+                    <h3>算法学习</h3>
+                    <p class="project-date">2022年至今</p>
+                    <p>在洛谷刷题，学习算法和数据结构。</p>
                 </div>
             </section>
             
-            <!-- 近期目标 -->
             <section class="content-block">
-                <h2><i class="fas fa-bullseye"></i> 近期目标</h2>
+                <h2><i class="fas fa-bullseye"></i> 目标</h2>
                 <ul class="goal-list">
-                    <li><i class="fas fa-spinner"></i> 完成个人网站的第一版</li>
-                    <li><i class="fas fa-spinner"></i> 在洛谷刷满100道题目</li>
-                    <li><i class="fas fa-spinner"></i> 学习JavaScript交互效果</li>
-                    <li><i class="fas fa-spinner"></i> 参加一次编程比赛</li>
+                    <li><i class="fas fa-spinner"></i> 完成个人网站</li>
+                    <li><i class="fas fa-spinner"></i> 刷满100道题</li>
+                    <li><i class="fas fa-spinner"></i> 学JavaScript</li>
+                    <li><i class="fas fa-spinner"></i> 参加编程比赛</li>
                 </ul>
             </section>
             
-            <!-- 页脚 -->
             <footer class="site-footer">
-                <p>© 2026 刘泽宇 | 本页面由手工编写，持续更新中</p>
-                <p class="update-time">最后更新：<span id="current-date"></span></p>
+                <p>© 2026 刘泽宇 | liu-zeyu个人编写 | 版权所有</p>
+                <p class="update-time">更新：<span id="current-date"></span></p>
             </footer>
         </main>
     </div>
     
-    <!-- 状态切换脚本 -->
     <script>
         const statuses = [
-            { id: 'offline', emoji: '💤', text: '下线', desc: '离线中，暂不接收消息' },
-            { id: 'online', emoji: '🚀', text: '上线', desc: '在线，可正常联系' },
-            { id: 'afk', emoji: '🎣', text: '摸鱼', desc: '人在心不在，回复可能慢' },
-            { id: 'busy', emoji: '🔧', text: '挂机', desc: '忙碌中，请勿打扰' }
+            { id: 'offline', emoji: '💤', text: '下线', desc: '离线中' },
+            { id: 'online', emoji: '🚀', text: '上线', desc: '在线' },
+            { id: 'afk', emoji: '🎣', text: '摸鱼', desc: '人在心不在' },
+            { id: 'busy', emoji: '🔧', text: '挂机', desc: '忙碌中' }
         ];
         let currentStatusIndex = 0;
         
@@ -164,40 +118,36 @@
             if (saved) {
                 try {
                     const parsed = JSON.parse(saved);
-                    const savedIndex = statuses.findIndex(s => s.id === parsed.id);
-                    if (savedIndex !== -1) currentStatusIndex = savedIndex;
+                    const idx = statuses.findIndex(s => s.id === parsed.id);
+                    if (idx !== -1) currentStatusIndex = idx;
                 } catch(e) {}
             }
             updateStatusDisplay();
         }
         
         function updateStatusDisplay() {
-            const status = statuses[currentStatusIndex];
-            const badge = document.getElementById('statusBadge');
-            badge.className = `status-badge status-${status.id}`;
-            document.getElementById('statusEmoji').textContent = status.emoji;
-            document.getElementById('statusText').textContent = status.text;
-            document.getElementById('statusDescription').textContent = `${status.emoji} ${status.desc}`;
-            document.getElementById('avatarStatus').className = `avatar-status avatar-status-${status.id}`;
+            const s = statuses[currentStatusIndex];
+            document.getElementById('statusBadge').className = `status-badge status-${s.id}`;
+            document.getElementById('statusEmoji').textContent = s.emoji;
+            document.getElementById('statusText').textContent = s.text;
+            document.getElementById('statusDescription').textContent = `${s.emoji} ${s.desc}`;
+            document.getElementById('avatarStatus').className = `avatar-status avatar-status-${s.id}`;
             
             const now = new Date();
             document.getElementById('lastUpdateTime').textContent = 
                 now.toLocaleTimeString('zh-CN', { hour: '2-digit', minute: '2-digit' });
                 
             localStorage.setItem('userStatus', JSON.stringify({
-                id: status.id,
-                emoji: status.emoji,
-                text: status.text,
-                desc: status.desc,
+                id: s.id, emoji: s.emoji, text: s.text, desc: s.desc,
                 timestamp: now.getTime()
             }));
         }
         
         function changeStatus() {
-            const nextIndex = (currentStatusIndex + 1) % statuses.length;
-            const nextStatus = statuses[nextIndex];
-            if (confirm(`切换状态为：${nextStatus.emoji} ${nextStatus.text}\n描述：${nextStatus.desc}`)) {
-                currentStatusIndex = nextIndex;
+            const nextIdx = (currentStatusIndex + 1) % statuses.length;
+            const next = statuses[nextIdx];
+            if (confirm(`切换为：${next.emoji} ${next.text}（${next.desc}）`)) {
+                currentStatusIndex = nextIdx;
                 updateStatusDisplay();
             }
         }
