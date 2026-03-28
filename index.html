@@ -1,72 +1,132 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <title> 刘泽宇 | Liu-Zeyu </title>
-    <meta name="description" content="This is the personal homepage for 刘泽宇 (Liu-Zeyu).">
-    <link rel="stylesheet" href="assets/fonts.css">
-    <link rel="stylesheet" href="assets/hp.soha.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>刘泽宇 | Liu-Zeyu 的个人主页</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
 </head>
-<body class="fonts-zh-serif">
-    <div class="container">
-        <!-- 侧边栏 -->
-        <div class="side">
-            <img class="avatar" src="https://via.placeholder.com/150" alt="Your photo">
+<body>
+    <div class="page-container">
+        <!-- 左侧信息栏 -->
+        <aside class="info-panel">
+            <div class="avatar-box">
+                <img src="images/avatar.jpg" alt="刘泽宇的头像" class="avatar">
+            </div>
             
-            <div>
-                <div data-nosnippet style="display: none;">
-                    <h0> Rattlesnake </h0>
+            <h1 class="chinese-name">刘泽宇</h1>
+            <p class="english-name">Liu-Zeyu</p>
+            <p class="nickname"><i class="fas fa-paw"></i> Rattlesnake</p>
+            
+            <div class="info-section">
+                <h3><i class="fas fa-user-graduate"></i> 基本信息</h3>
+                <p><strong>生日：</strong>2016 年 1 月</p>
+                <p><strong>年级：</strong>小学</p>
+                <p><strong>坐标：</strong>安徽省阜阳市</p>
+            </div>
+            
+            <div class="info-section">
+                <h3><i class="fas fa-code"></i> 编程技能</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag cpp">C++ (2022)</span>
+                    <span class="skill-tag python">Python (2024)</span>
+                    <span class="skill-tag web">网页开发</span>
                 </div>
-                <h1 class="name fonts-zh-serif">刘泽宇</h1>
-                <b class="name-alt fonts-en-serif">Liu-Zeyu</b>
             </div>
             
-            <!-- 联系方式 -->
-            <div class="contacts fonts-en-sans">
-                <span title="生日"><i class="fas fa-birthday-cake"></i> <span>2016 - 1</span></span>
-                <span title="E-Mail（未更新）"><i class="fas fa-envelope"></i>  </span>
-                <span title="GitHub（未更新）"><i class="fab fa-github"></i> <a href="https://github.com/"></a></span>
-                <span class="hide-on-print" title="个人博客（未更新）"><i class="fas fa-home"></i> <a href="  "></a></span>
+            <div class="info-section">
+                <h3><i class="fas fa-language"></i> 语言能力</h3>
+                <p>中文（母语）</p>
+                <p>英语（学习中）</p>
             </div>
             
-            <div class="more-link">
-                <a href="#" class="fonts-en-serif">English</a>
+            <div class="social-links">
+                <p><i class="fas fa-map-marker-alt"></i> 阜阳市实验小学北校区</p>
+                <p class="note">联系方式待完善</p>
             </div>
-        </div>
+        </aside>
         
-        <!-- 主要内容区 -->
-        <div class="main">
-            <h2>项目经历</h2>
-            <dl>
-                <dt><span></span>Web开发<small class="pull-right">2026 年 3 月至今</small></dt>
-                <dd><span>所有者</span> <small class="pull-right"><a href="#">Link</a></small></dd>
-                <dd>打算做个属于自己的网站，当做的很好时，且有一定的经济能力，考虑买域名和服务器。</dd>
-            </dl>
+        <!-- 右侧主内容 -->
+        <main class="content-area">
+            <!-- 欢迎语 -->
+            <section class="content-block">
+                <h2><i class="fas fa-hand-wave"></i> 你好！</h2>
+                <p>我是刘泽宇，一名来自安徽阜阳的小学生，对编程和计算机科学充满兴趣。2022年开始学习C++，2024年开始接触Python，目前正在学习网页开发。</p>
+                <p>我相信代码能够创造有趣的事物，享受解决问题和动手实践的乐趣。</p>
+            </section>
             
-            <h2>教育经历</h2>
-            <dl>
-                <dt><span>目前在 安徽省 阜阳市 实验小学北校区</span> <small class="pull-right">2023至今</small></dt>
-                <dd> 小学 </dd>
-            </dl>
+            <!-- 项目经历 -->
+            <section class="content-block">
+                <h2><i class="fas fa-laptop-code"></i> 项目与经历</h2>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>个人网站开发</h3>
+                        <span class="project-date">2026年3月至今</span>
+                    </div>
+                    <p class="project-role"><i class="fas fa-user-tie"></i> 所有者 & 开发者</p>
+                    <p class="project-desc">我正在创建自己的个人网站，学习HTML、CSS和JavaScript。计划在网站功能完善后，购买域名和服务器进行正式部署。</p>
+                    <div class="project-tech">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>算法学习</h3>
+                        <span class="project-date">2022年至今</span>
+                    </div>
+                    <p class="project-role"><i class="fas fa-brain"></i> 学习者</p>
+                    <p class="project-desc">在洛谷等平台刷题，学习基础算法和数据结构，为未来的编程竞赛做准备。</p>
+                    <div class="project-tech">
+                        <span>C++</span>
+                        <span>算法</span>
+                        <span>数据结构</span>
+                    </div>
+                </div>
+            </section>
             
-            <h2>技能</h2>
-            <dl>
-                <dt>人类语言</dt>
-                <dd><ul>
-                    <li> 中文（汉字） <i> 母语 </i></li>
-                    <li> 英语 <i> 暂无标志性时间 </i></li>
-                </ul></dd>
-            </dl>
-            <dl>
-                <dt>编程语言</dt>
-                <dd><ul>
-                    <li> C++ <i>(2022)</i></li>
-                    <li> Python <i>(2024)</i></li>
-                </ul></dd>
-            </dl>
-        </div>
+            <!-- 教育经历 -->
+            <section class="content-block">
+                <h2><i class="fas fa-graduation-cap"></i> 教育经历</h2>
+                
+                <div class="education-item">
+                    <div class="edu-header">
+                        <h3>阜阳市实验小学北校区</h3>
+                        <span class="edu-date">2023年至今</span>
+                    </div>
+                    <p class="edu-detail">小学阶段，在学习文化课的同时，积极参加编程和信息技术相关的课外活动。</p>
+                </div>
+            </section>
+            
+            <!-- 近期目标 -->
+            <section class="content-block">
+                <h2><i class="fas fa-bullseye"></i> 近期目标</h2>
+                <ul class="goal-list">
+                    <li><i class="fas fa-spinner"></i> 完成个人网站的第一版</li>
+                    <li><i class="fas fa-spinner"></i> 在洛谷刷满100道题目</li>
+                    <li><i class="fas fa-spinner"></i> 学习JavaScript交互效果</li>
+                    <li><i class="fas fa-spinner"></i> 参加一次编程比赛</li>
+                </ul>
+            </section>
+            
+            <!-- 页脚 -->
+            <footer class="site-footer">
+                <p>© 2026 刘泽宇 | 本页面由手工编写，持续更新中</p>
+                <p class="update-time">最后更新：<span id="current-date"></span></p>
+            </footer>
+        </main>
     </div>
+    
+    <script>
+        // 自动更新日期
+        const now = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('current-date').textContent = now.toLocaleDateString('zh-CN', options);
+    </script>
 </body>
 </html>
